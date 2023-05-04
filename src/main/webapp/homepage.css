@@ -1,0 +1,230 @@
+body{
+	margin: 0;
+}
+.navbar {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  font-family: Arial;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  height: 60px;
+  font-size: 16px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding: 6px 6px;
+  text-decoration: none;
+  font-size: 30px;
+ 
+}
+.navbar a .logo{
+  padding: 0px;
+  margin: 0px;
+  }
+#search1{
+  float: right;
+  align-self: right;
+  margin: 10px;
+  font-size: 17px;
+  margin-left: 100px;
+}
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  height: 70px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px 12px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn, .deals .sk-options:hover {
+	color: white;
+  background-color: green;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.cont {
+  height: 160px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to left, green, yellowgreen, green);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7 );
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.deals{
+  height: auto;
+  width: 92%;
+  margin: 20px;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  background-image: url("images/login.jpeg");
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+.search-box{
+  align-items: center;
+  justify-content: center;
+}
+.deals .sk-options{
+  font-size: 16px;
+  height: auto;
+  width: 460px;
+  border: none;
+  color: white;
+  padding: 14px 16px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 255, 0, 0.8);
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
